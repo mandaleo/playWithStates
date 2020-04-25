@@ -13,6 +13,10 @@
 		D93185E224549B800050F059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93185E124549B800050F059 /* Assets.xcassets */; };
 		D93185E524549B800050F059 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93185E424549B800050F059 /* Preview Assets.xcassets */; };
 		D93185E824549B800050F059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93185E624549B800050F059 /* LaunchScreen.storyboard */; };
+		D93185F224549C0F0050F059 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185F124549C0F0050F059 /* UserSettings.swift */; };
+		D93185F424549CD20050F059 /* UserSettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185F324549CD20050F059 /* UserSettingsContentView.swift */; };
+		D93185F724549E390050F059 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185F624549E390050F059 /* UserAuthentication.swift */; };
+		D93185F924549F080050F059 /* UserAuthenticationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185F824549F080050F059 /* UserAuthenticationContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		D93185E424549B800050F059 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D93185E724549B800050F059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93185E924549B800050F059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93185F124549C0F0050F059 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		D93185F324549CD20050F059 /* UserSettingsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsContentView.swift; sourceTree = "<group>"; };
+		D93185F624549E390050F059 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		D93185F824549F080050F059 /* UserAuthenticationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		D93185DA24549B780050F059 /* playWithStates */ = {
 			isa = PBXGroup;
 			children = (
+				D93185EF24549BDF0050F059 /* ObservedObject */,
 				D93185DB24549B790050F059 /* AppDelegate.swift */,
 				D93185DD24549B790050F059 /* SceneDelegate.swift */,
 				D93185DF24549B790050F059 /* ContentView.swift */,
@@ -73,6 +82,33 @@
 				D93185E424549B800050F059 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D93185EF24549BDF0050F059 /* ObservedObject */ = {
+			isa = PBXGroup;
+			children = (
+				D93185F024549BF00050F059 /* State from external objecs */,
+				D93185F524549DEB0050F059 /* ObjectWillChange */,
+			);
+			path = ObservedObject;
+			sourceTree = "<group>";
+		};
+		D93185F024549BF00050F059 /* State from external objecs */ = {
+			isa = PBXGroup;
+			children = (
+				D93185F124549C0F0050F059 /* UserSettings.swift */,
+				D93185F324549CD20050F059 /* UserSettingsContentView.swift */,
+			);
+			path = "State from external objecs";
+			sourceTree = "<group>";
+		};
+		D93185F524549DEB0050F059 /* ObjectWillChange */ = {
+			isa = PBXGroup;
+			children = (
+				D93185F624549E390050F059 /* UserAuthentication.swift */,
+				D93185F824549F080050F059 /* UserAuthenticationContentView.swift */,
+			);
+			path = ObjectWillChange;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93185F724549E390050F059 /* UserAuthentication.swift in Sources */,
+				D93185F424549CD20050F059 /* UserSettingsContentView.swift in Sources */,
 				D93185DC24549B790050F059 /* AppDelegate.swift in Sources */,
+				D93185F224549C0F0050F059 /* UserSettings.swift in Sources */,
+				D93185F924549F080050F059 /* UserAuthenticationContentView.swift in Sources */,
 				D93185DE24549B790050F059 /* SceneDelegate.swift in Sources */,
 				D93185E024549B790050F059 /* ContentView.swift in Sources */,
 			);
