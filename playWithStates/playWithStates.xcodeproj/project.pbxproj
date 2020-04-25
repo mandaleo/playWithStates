@@ -17,6 +17,8 @@
 		D93185F424549CD20050F059 /* UserSettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185F324549CD20050F059 /* UserSettingsContentView.swift */; };
 		D93185F724549E390050F059 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185F624549E390050F059 /* UserAuthentication.swift */; };
 		D93185F924549F080050F059 /* UserAuthenticationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185F824549F080050F059 /* UserAuthenticationContentView.swift */; };
+		D93185FC2454BC980050F059 /* CustomBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185FB2454BC980050F059 /* CustomBindingsView.swift */; };
+		D93186002454BD450050F059 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93185FF2454BD450050F059 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D93185F324549CD20050F059 /* UserSettingsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsContentView.swift; sourceTree = "<group>"; };
 		D93185F624549E390050F059 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		D93185F824549F080050F059 /* UserAuthenticationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationContentView.swift; sourceTree = "<group>"; };
+		D93185FB2454BC980050F059 /* CustomBindingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindingsView.swift; sourceTree = "<group>"; };
+		D93185FF2454BD450050F059 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				D93185EF24549BDF0050F059 /* ObservedObject */,
+				D93185FA2454BC790050F059 /* Custom bindings */,
+				D93185FE2454BD310050F059 /* Timer */,
 				D93185DB24549B790050F059 /* AppDelegate.swift */,
 				D93185DD24549B790050F059 /* SceneDelegate.swift */,
 				D93185DF24549B790050F059 /* ContentView.swift */,
@@ -109,6 +115,22 @@
 				D93185F824549F080050F059 /* UserAuthenticationContentView.swift */,
 			);
 			path = ObjectWillChange;
+			sourceTree = "<group>";
+		};
+		D93185FA2454BC790050F059 /* Custom bindings */ = {
+			isa = PBXGroup;
+			children = (
+				D93185FB2454BC980050F059 /* CustomBindingsView.swift */,
+			);
+			path = "Custom bindings";
+			sourceTree = "<group>";
+		};
+		D93185FE2454BD310050F059 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				D93185FF2454BD450050F059 /* TimerView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93186002454BD450050F059 /* TimerView.swift in Sources */,
 				D93185F724549E390050F059 /* UserAuthentication.swift in Sources */,
 				D93185F424549CD20050F059 /* UserSettingsContentView.swift in Sources */,
 				D93185DC24549B790050F059 /* AppDelegate.swift in Sources */,
@@ -189,6 +212,7 @@
 				D93185F924549F080050F059 /* UserAuthenticationContentView.swift in Sources */,
 				D93185DE24549B790050F059 /* SceneDelegate.swift in Sources */,
 				D93185E024549B790050F059 /* ContentView.swift in Sources */,
+				D93185FC2454BC980050F059 /* CustomBindingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
